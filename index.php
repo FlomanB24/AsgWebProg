@@ -98,6 +98,8 @@
                         <td><?= $row["Page"]; ?></td>
                         <td><?= $row["Price"]; ?></td>
                         <td>
+                            <a href="add.php">Add</a>
+                            <a href="update.php?BookID=<?= $row["BookID"]; ?>" onclick="return confirm('yakin');">Update</a>
                             <a href="delete.php?BookID=<?= $row["BookID"]; ?>" onclick="return confirm('yakin');">Delete</a>
                         </td>
                     </tr>
